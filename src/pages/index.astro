@@ -1,5 +1,6 @@
 ---
-
+import Card from "./components/Card.astro"
+import "./styles/general.css"
 ---
 
 <html lang="en">
@@ -12,11 +13,21 @@
 		<title>Astro Test</title>
 	</head>
 	<body>
+		<header>
 		<h1>Astro Test</h1>
 		<p>Welcome to your Astro test!</p>
+		</header>
+		<section>
 		<h2>Getting Started</h2>
 		<p>Follow the instructions in the console to get started.</p>
-		<h2>Documentation</h2>
-		<p>Find more information about Astro in the <a href="https://docs.astro.build">official documentation</a>.</p>
+		</section>
+		<section>
+			<h2>Card section</h2>
+			<p>This is a simple card section.</p>
+			<div class="grid">
+			<Card img="/imgs/DmaK9jdXoAc843u.jpg" headline="Card Title" text="This is a simple card."/>
+			</div>
+			
+		</section>
 	</body>
 </html>
